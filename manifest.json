@@ -2,7 +2,7 @@
   "scripts": [
     {
       "event": "UPS_Sales_Warehouse_Capacity_Barrel_update",
-      "path": "./foo.js",
+      "path": "foo.js",
       "runlevel": "notpure"
     }
   ]
