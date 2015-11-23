@@ -1,9 +1,9 @@
 {
   "scripts": [
     {
-      "event": "UPS_Sales_Warehouse_Capacity_Barrel_update",
+      "event_name": "UPS/Sales/Warehouse/Capacity/Barrel/update",
       "file": "foo.js",
-      "runlevel": "notpure"
+      "run_level": "notpure"
     }
   ]
 }
