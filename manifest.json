@@ -1,9 +1,0 @@
-{
-  "scripts": [
-    {
-      "event_name": "UPS/Sales/Warehouse/Capacity/Barrel/update",
-      "file": "foo.js",
-      "run_level": "notpure"
-    }
-  ]
-}

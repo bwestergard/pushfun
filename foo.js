@@ -1,3 +1,5 @@
-module.exports = function () { return 5; }
-
-// comment comment comment
+exports.handler = function(event, context) {
+  context.succeed(
+    (event.record.capacity < 30) && (event.changeSet.capacity > 30)
+  )
+}
