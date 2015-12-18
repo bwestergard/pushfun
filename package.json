@@ -1,0 +1,9 @@
+{
+  "lanetix": {
+    "script": {
+      "event_name": "depot",
+      "code": "foo.js",
+      "run_level": "notpure"
+    }
+  }
+}
