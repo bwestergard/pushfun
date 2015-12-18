@@ -14,6 +14,6 @@ exports.handler = function (event, context) {
       body: 'The duck depot can now handle' + event.changeSet.capacity
     }]);
   } else {
-    return [];
+    context.succeed([]);
   }
 }
