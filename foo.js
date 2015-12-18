@@ -7,7 +7,7 @@ exports.handler = function(event, context) {
     }])
   } else if ((event.record.capacity > 10) && (event.changeSet.capacity < 10)) {
     context.succeed([{
-      to: 'management@acme.com',
+      to: 'operations@acme.com',
       subject: 'Duck depot capacity critically low!',
       body: 'The duck depot can now handle' + event.changeSet.capacity
     }])
