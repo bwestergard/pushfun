@@ -1,4 +1,4 @@
-exports.handler = function(event, context) {
+exports.handler = function (event, context) {
   if ((event.record.capacity < 30) && (event.changeSet.capacity > 30)) {
     context.succeed([{
       to: 'management@acme.com',
