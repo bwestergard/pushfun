@@ -1,7 +1,7 @@
 // final
 
 exports.handler = function (event, context) {
-  if ((event.record.capacity < 30) && (event.changeSet.capacity > 30)) {
+  if ((event.record.capacity < 50) && (event.changeSet.capacity > 50)) {
     context.succeed([{
       to: 'management@acme.com',
       subject: 'Duck depot capacity expanded!',
