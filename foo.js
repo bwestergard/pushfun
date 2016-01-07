@@ -4,7 +4,7 @@ exports.handler = function (event, context) {
     message = "no operation";
   };
 
-  if (event.changeSet.trash_cans === '12731122') {
+  if (event.changeSet.trash_cans === 12731122) {
     message = "Yay!"
   } else {
     message = "Boo!"
