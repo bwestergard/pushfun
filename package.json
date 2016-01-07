@@ -1,7 +1,7 @@
 {
   "lanetix": {
     "script": {
-      "event_name": "depot",
+      "event_name": "parts_warehouse",
       "code": "foo.js",
       "run_level": "notpure"
     }
