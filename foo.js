@@ -1,5 +1,5 @@
 exports.handler = function (event, context) {
-  if(!event.changeSet.trash_cans) return;
+  if(!event.changeSet.trash_cans) context.succeed({'message': 'noOp'});
 
   if (event.changeSet.trash_cans === '12731122') {
     context.succeed({
