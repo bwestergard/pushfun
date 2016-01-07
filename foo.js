@@ -1,15 +1,17 @@
 exports.handler = function (event, context) {
-  if(!event.changeSet.trash_cans) context.succeed({'message': 'noOp'});
+  var message;
+  if(!event.changeSet.trash_cans) {
+    message = "no operation";
+  };
 
   if (event.changeSet.trash_cans === '12731122') {
-    context.succeed({
-      'message': 'thanks for recycling!',
-      'option': event.trash_cans
-    });
+    message = "Yay!"
   } else {
-    context.succeed({
-      'message': 'You have disappointed mother earth.',
-      'option': event.trash_cans
-    });
+    message = "Boo!"
   }
+
+  context.succeed({
+    'message': message,
+    'changes': event.changeSet
+  });
 }
