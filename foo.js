@@ -1,8 +1,11 @@
-// final
-
 exports.handler = function (event, context) {
-context.succeed({
-  'message': 'got event',
-  'event': event
-});
+  if(event.trash_cans == '12731122') {
+    context.succeed({
+      'message': 'thanks for recycling!'
+    });
+  } else {
+    context.succeed({
+      'message': 'You have disappointed mother earth.'
+    });
+  }
 }
