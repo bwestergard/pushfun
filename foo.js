@@ -1,5 +1,5 @@
 exports.handler = function (event, context) {
-  if(event.trash_cans === '12731122') {
+  if(event.changeSet.trash_cans === '12731122') {
     context.succeed({
       'message': 'thanks for recycling!',
       'option': event.trash_cans
